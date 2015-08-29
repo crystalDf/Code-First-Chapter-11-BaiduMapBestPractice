@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
             mMapView.getMap().setMyLocationEnabled(true);
 
             MyLocationData myLocationData = new MyLocationData.Builder()
-                    .latitude(location.getLatitude())
-                    .longitude(location.getLongitude())
+                    .latitude(baiduTarget.latitude)
+                    .longitude(baiduTarget.longitude)
                     .build();
 
             BitmapDescriptor bitmapDescriptor =
